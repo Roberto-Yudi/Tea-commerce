@@ -2,3 +2,4 @@ export SECRET_KEY=some_secret_key
 export DEBUG=False
 export ALLOWED_HOSTS=localhost,127.0.0.1,.herokuapp.com
 export DATABASE_URL=postgres://postgres:postgres@localhost/postgres
+export SENTRY_DSN=
