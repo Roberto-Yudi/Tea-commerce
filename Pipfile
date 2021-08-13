@@ -8,6 +8,10 @@ django = "*"
 gunicorn = "*"
 environs = {extras = ["django"], version = "*"}
 psycopg2 = "*"
+pytest-django = "*"
+pytest-cov = "*"
+codecov = "*"
+pytest = "*"
 
 [dev-packages]
 
