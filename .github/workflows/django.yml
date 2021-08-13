@@ -42,5 +42,7 @@ jobs:
       run: |
         pipenv run pytest --cov=config
     - name: Posting Coverage
+      env:
+        CODECOV_TOKEN: "801d09c2-7893-44ea-89a6-60f45f06563b"
       run: |
         pipenv run codecov
