@@ -1,4 +1,4 @@
-export SECRET_KEY=django-insecure-hh&3=b4gz$@19a#87kzx^99%vj^=dp+#ic6-7tipdaryaiqb8r
+export SECRET_KEY=some_secret_key
 export DEBUG=False
 export ALLOWED_HOSTS=localhost,127.0.0.1,.herokuapp.com
 export DATABASE_URL=postgres://postgres:postgres@localhost/postgres
