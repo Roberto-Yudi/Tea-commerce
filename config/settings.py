@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
     # local
     'accounts',
+    'shop',
 
     # 3rd party
     'debug_toolbar',
