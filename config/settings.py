@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     # local
     'accounts',
     'shop',
+    'cart',
 
     # 3rd party
     'debug_toolbar',
@@ -166,3 +167,5 @@ if SENTRY_DSN:
 # Media config
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+CART_SESSION_ID = 'cart'
