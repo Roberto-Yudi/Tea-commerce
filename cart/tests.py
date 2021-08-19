@@ -1,17 +1,24 @@
-from django.http import request
 import pytest
 from pytest_django.asserts import assertContains
-from shop.models import Product
+from shop.models import Product, Category
 from cart.cart import Cart
 
+
 # @pytest.fixture
-# def sample_product(db):
-#     product = Product.objects.get()
-#     return product
+# def product(db):
+#     product = Product.objects.create(
+#         category = Category.objects.create(
+#         name = 'some_category'
+#     ),
+#         name = 'some tea',
+#         slug = 'some-tea',
+#         price = 30,
+#         available = True
+#     )
+#     return product 
 
-
-# def test_cart_add(db,sample_product):
+# def test_cart_add(db,product, request):
 #     cart = Cart(request)
-#     cart.add(sample_product)
+#     cart.add(product)
 #     assert cart[1]
 
