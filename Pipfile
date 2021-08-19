@@ -15,6 +15,7 @@ pytest = "*"
 django-debug-toolbar = "*"
 sentry-sdk = "*"
 pillow = "*"
+whitenoise = "*"
 
 [dev-packages]
 
