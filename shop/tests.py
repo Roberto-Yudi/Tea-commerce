@@ -33,6 +33,6 @@ class Test_Product:
         assertNotContains(response, 'should not be on the page')
         assertTemplateUsed(response, 'shop/product/list.html')
 
-    # def test_product_detail_view(self, product, client, db):
-    #     response = client.get(product.get_absolute_url())
-    #     assert response.status_code == 200
+    def test_product_detail_view(self, product, client, db):
+        response = client.get(product.category.get_absolute_url())
+        assert response.status_code == 200

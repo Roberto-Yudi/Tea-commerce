@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 import sentry_sdk
+from celery import Celery
 from sentry_sdk.integrations.django import DjangoIntegration
 from pathlib import Path
 from environs import Env
@@ -171,3 +172,11 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 CART_SESSION_ID = 'cart'
+
+#Celery configs
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+app = Celery('config')
+app.config_from_object('django.conf:settings', namespace='CELERY')
+app.autodiscover_tasks()
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
