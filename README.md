@@ -2,6 +2,8 @@
 Este site é baseado no projeto ensinado no livro Django 3 by Example de Antonio Mele, capitulos de 7 a 9.
 projeto original: https://github.com/PacktPublishing/Django-3-by-Example
 
+Disponivel em: https://teacommerce.herokuapp.com
+
 ## Features:
 - Catalogo de produtos;
 - Uso de sessões, para implementar a funcionalidade de cart;
