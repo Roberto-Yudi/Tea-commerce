@@ -16,6 +16,7 @@ django-debug-toolbar = "*"
 sentry-sdk = "*"
 pillow = "*"
 whitenoise = "*"
+model-bakery = "*"
 
 [dev-packages]
 
