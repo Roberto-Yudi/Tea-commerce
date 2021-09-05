@@ -1,3 +1,4 @@
+[![codecov](https://codecov.io/gh/Roberto-Yudi/Tea-commerce/branch/main/graph/badge.svg?token=F3IE67757T)](https://codecov.io/gh/Roberto-Yudi/Tea-commerce)
 # About the project 
 Este site é baseado no projeto ensinado no livro Django 3 by Example de Antonio Mele, capitulos de 7 a 9.
 projeto original: https://github.com/PacktPublishing/Django-3-by-Example
@@ -28,8 +29,7 @@ Disponivel em: https://teacommerce.herokuapp.com
 - sentry-sdk 
 - pillow 
 - whitenoise 
-- model-mommy 
+- model-bakery
 
 ## Obs:
-Projeto incompleto.
-CI/CD implementado.
+Projeto em andamento.
