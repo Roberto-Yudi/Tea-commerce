@@ -12,6 +12,7 @@ Disponivel em: https://teacommerce.herokuapp.com
 - Sistema de pedidos;
 - Admin customizado;
 - Tarefas assíncronas com Celery;
+- Monitoramento do Celery com flower;
 
 ## Built with:
 - Django 3.2.

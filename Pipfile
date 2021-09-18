@@ -17,6 +17,8 @@ sentry-sdk = "*"
 pillow = "*"
 whitenoise = "*"
 model-bakery = "*"
+celery = "*"
+flower = "*"
 
 [dev-packages]
 
