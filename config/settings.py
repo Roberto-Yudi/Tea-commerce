@@ -148,7 +148,7 @@ INTERNAL_IPS = [
     '127.0.0.1',
 ]
 
-# sentry configs
+# Sentry configs
 SENTRY_DSN = env("SENTRY_DSN")
 
 if SENTRY_DSN:
@@ -166,10 +166,14 @@ if SENTRY_DSN:
         send_default_pii=True
     )
 
-# Media config
+# Media configs
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 CART_SESSION_ID = 'cart'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Celery configs
+
+CELERY_BROKER_URL = env('CLOUDAMQP_URL')
