@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 import sentry_sdk
+import braintree
 from sentry_sdk.integrations.django import DjangoIntegration
 from pathlib import Path
 from environs import Env
@@ -50,6 +51,7 @@ INSTALLED_APPS = [
     'shop',
     'cart',
     'orders',
+    'payment',
 
     # 3rd party
     'debug_toolbar',
@@ -175,5 +177,17 @@ CART_SESSION_ID = 'cart'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Celery configs
+if not DEBUG:
+    CELERY_BROKER_URL = env('CLOUDAMQP_URL')
 
-CELERY_BROKER_URL = env('CLOUDAMQP_URL')
+# Braintree configs
+BT_MERCHANT_ID = env('BT_MERCHANT_ID')
+BT_PUBLIC_KEY = env('BT_PUBLIC_KEY')
+BT_PRIVATE_KEY = env('BT_PRIVATE_KEY')
+
+BRAINTREE_CONF = braintree.Configuration(
+    braintree.Environment.Sandbox,
+    BT_MERCHANT_ID,
+    BT_PUBLIC_KEY,
+    BT_PRIVATE_KEY,
+)
