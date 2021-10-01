@@ -13,6 +13,7 @@ Disponivel em: https://teacommerce.herokuapp.com
 - Admin customizado;
 - Tarefas assíncronas com Celery;
 - Monitoramento do Celery com flower;
+- Geração de invoices em pdf;
 
 ## Built with:
 - Django 3.2.
@@ -32,6 +33,8 @@ Disponivel em: https://teacommerce.herokuapp.com
 - whitenoise 
 - model-bakery
 - celery
+- braintree
+- weasyprint
 
 ## Obs:
 Projeto em andamento.

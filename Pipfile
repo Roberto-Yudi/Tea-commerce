@@ -20,6 +20,7 @@ model-bakery = "*"
 celery = "*"
 flower = "*"
 braintree = "*"
+weasyprint = "*"
 
 [dev-packages]
 

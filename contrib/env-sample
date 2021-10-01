@@ -3,3 +3,7 @@ export DEBUG=False
 export ALLOWED_HOSTS=localhost,127.0.0.1,.herokuapp.com
 export DATABASE_URL=postgres://postgres:postgres@localhost/postgres
 export SENTRY_DSN=
+export CLOUDAMQP_URL=
+export BT_MERCHANT_ID=
+export BT_PUBLIC_KEY=
+export BT_PRIVATE_KEY=
