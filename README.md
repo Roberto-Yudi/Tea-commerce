@@ -13,7 +13,9 @@ Disponivel em: https://teacommerce.herokuapp.com
 - Admin customizado;
 - Tarefas assíncronas com Celery;
 - Monitoramento do Celery com flower;
+- Gateway de pagamento via Braintree;
 - Geração de invoices em pdf;
+- Monitoramento do app com Sentry.
 
 ## Built with:
 - Django 3.2.
